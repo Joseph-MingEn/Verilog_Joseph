@@ -1,0 +1,13 @@
+rst=0, CountOut= 4'hx
+rst=0, CountOut= 4'hx
+rst=1, CountOut= 4'hx
+rst=0, CountOut= 4'h1
+rst=0, CountOut= 4'ha
+rst=0, CountOut= 4'h2
+rst=0, CountOut= 4'hb
+rst=0, CountOut= 4'h3
+rst=0, CountOut= 4'hc
+rst=0, CountOut= 4'h4
+rst=0, CountOut= 4'hd
+rst=0, CountOut= 4'hd
+rst=0, CountOut= 4'hd

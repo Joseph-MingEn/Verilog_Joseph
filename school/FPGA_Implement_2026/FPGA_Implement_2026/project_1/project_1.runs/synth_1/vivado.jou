@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 26 09:30:30 2026
+# Process ID: 29668
+# Current directory: C:/Users/Administrator/Desktop/Classes/NTOU_20260201/VerilogAndFPGA/W5/FPGA_Implement_2026/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log ClkDiv26Bits.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ClkDiv26Bits.tcl
+# Log file: C:/Users/Administrator/Desktop/Classes/NTOU_20260201/VerilogAndFPGA/W5/FPGA_Implement_2026/project_1/project_1.runs/synth_1/ClkDiv26Bits.vds
+# Journal file: C:/Users/Administrator/Desktop/Classes/NTOU_20260201/VerilogAndFPGA/W5/FPGA_Implement_2026/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ClkDiv26Bits.tcl -notrace
