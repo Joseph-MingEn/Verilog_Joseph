@@ -1,7 +1,6 @@
-
 `timescale 1ns / 1ps
-module FSM_HW(clk, rst, In, Out, StoporGo);
-input clk, rst, In, StoporGo;
+module FSM_HW(clk, rst, In, Out, Rev);
+input clk, rst, In, Rev;
 output [3:0] Out;
 reg [3:0] Out;
 
@@ -40,183 +39,115 @@ begin
 end
 
 //==== New_State ===
-always @(Org_State or In or StoporGo)
+always @(Org_State or In or Rev)
 begin
     case ( {Org_State, In} )
         {S0, 1'b0}:
+            New_State = S0;
+        {S0, 1'b1}:
         begin
-            if(StoporGo == 1'b1)
+            if(Rev == 1'b1)
             begin
                 New_State = S7;
             end
             else
             begin
-                New_State = S0;
-            end
-        end
-        {S0, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S1;
-            end
-            else
-            begin
-                New_State = S0;
             end
         end
         {S1, 1'b0}:
         begin
-            if(StoporGo == 1'b1)
+            New_State = S1;
+        end
+        {S1, 1'b1}:
+        begin
+            if(Rev == 1'b1)
             begin
                 New_State = S0;
             end
             else
             begin
-                New_State = S1;
-            end
-        end
-        {S1, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S2;
-            end
-            else
-            begin
-                New_State = S1;
             end
         end
         {S2, 1'b0}:
+            New_State = S2;
+        {S2, 1'b1}:
         begin
-            if(StoporGo == 1'b1)
+            if(Rev == 1'b1)
             begin
                 New_State = S1;
             end
             else
             begin
-                New_State = S2;
-            end
-        end
-        {S2, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S3;
-            end
-            else
-            begin
-                New_State = S2;
             end
         end
         {S3, 1'b0}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
-                New_State = S2;
-            end
-            else
-            begin
-                New_State = S3;
-            end
-        end
+            New_State = S3;
         {S3, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
             begin
-                New_State = S4;
+                if(Rev == 1'b1)
+                begin
+                    New_State = S2;
+                end
+                else
+                begin
+                    New_State = S4;
+                end
             end
-            else
-            begin
-                New_State = S3;
-            end
-        end
         {S4, 1'b0}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
-                New_State = S3;
-            end
-            else
-            begin
-                New_State = S4;
-            end
-        end
+            New_State = S4;
         {S4, 1'b1}:
         begin
-            if(StoporGo == 1'b1)
+            if(Rev == 1'b1)
             begin
-                New_State = S5;
+                New_State = S3;
             end
             else
             begin
-                New_State = S4;
+                New_State = S5;
             end
         end
         {S5, 1'b0}:
         begin
-            if(StoporGo == 1'b1)
+            New_State = S5;
+        end
+        {S5, 1'b1}:
+        begin
+            if(Rev == 1'b1)
             begin
                 New_State = S4;
             end
             else
             begin
-                New_State = S5;
-            end
-        end
-        {S5, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S6;
-            end
-            else
-            begin
-                New_State = S5;
             end
         end
         {S6, 1'b0}:
+            New_State = S6;
+        {S6, 1'b1}:
         begin
-            if(StoporGo == 1'b1)
+            if(Rev == 1'b1)
             begin
                 New_State = S5;
             end
             else
             begin
-                New_State = S6;
-            end
-        end
-        {S6, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S7;
-            end
-            else
-            begin
-                New_State = S6;
             end
         end
         {S7, 1'b0}:
+            New_State = S7;
+        {S7, 1'b1}:
         begin
-            if(StoporGo == 1'b1)
+            if(Rev == 1'b1)
             begin
                 New_State = S6;
             end
             else
             begin
-                New_State = S7;
-            end
-        end
-        {S7, 1'b1}:
-        begin
-            if(StoporGo == 1'b1)
-            begin
                 New_State = S0;
-            end
-            else
-            begin
-                New_State = S7;
             end
         end
         default:
@@ -227,7 +158,12 @@ end
 //==== Out ===
 always @(Org_State or In)
 begin
-    case ( {Org_State, In} )
+    if(rst == 1'b1)
+    begin
+        Out = 4'b0000;
+    end
+    else
+    case ( {Org_State, Rev} )
         {S0, 1'b0}:
             Out = 4'b0001;
         {S0, 1'b1}:
