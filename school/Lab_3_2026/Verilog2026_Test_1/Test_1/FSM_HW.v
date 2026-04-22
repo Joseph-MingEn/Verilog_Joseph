@@ -39,7 +39,7 @@ begin
 end
 
 //==== New_State ===
-always @(Org_State or In or Rev)
+always @(*)
 begin
     case ( {Org_State, In} )
         {S0, 1'b0}:
@@ -156,48 +156,23 @@ begin
 end
 
 //==== Out ===
-always @(Org_State or In)
+always @(*)
 begin
     if(rst == 1'b1)
     begin
         Out = 4'b0000;
     end
     else
-    case ( {Org_State, Rev} )
-        {S0, 1'b0}:
-            Out = 4'b0001;
-        {S0, 1'b1}:
-            Out = 4'b0000;
-        {S1, 1'b0}:
-            Out = 4'b0011;
-        {S1, 1'b1}:
-            Out = 4'b0001;
-        {S2, 1'b0}:
-            Out = 4'b0110;
-        {S2, 1'b1}:
-            Out = 4'b0011;
-        {S3, 1'b0}:
-            Out = 4'b1100;
-        {S3, 1'b1}:
-            Out = 4'b0110;
-        {S4, 1'b0}:
-            Out = 4'b0000;
-        {S4, 1'b1}:
-            Out = 4'b1100;
-        {S5, 1'b0}:
-            Out = 4'b0000;
-        {S5, 1'b1}:
-            Out = 4'b0000;
-        {S6, 1'b0}:
-            Out = 4'b1000;
-        {S6, 1'b1}:
-            Out = 4'b0000;
-        {S7, 1'b0}:
-            Out = 4'b0000;
-        {S7, 1'b1}:
-            Out = 4'b1000;
-        default:
-            Out = 4'bxxxx;
+    case ( {Org_State} )
+        S0: Out = 4'b0000; // 0
+            S1: Out = 4'b0001; // 1
+            S2: Out = 4'b0011; // 3
+            S3: Out = 4'b0110; // 6
+            S4: Out = 4'b1100; // C
+            S5: Out = 4'b0000; // 0
+            S6: Out = 4'b0000; // 0
+            S7: Out = 4'b1000; // 8
+            default: Out = 4'b0000;
     endcase
 end
 
