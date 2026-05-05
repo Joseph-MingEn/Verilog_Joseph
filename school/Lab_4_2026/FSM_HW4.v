@@ -1,0 +1,230 @@
+`timescale 1ns / 1ps
+module FSM_HW4(clk, rst, In, Out, Rev);
+input clk, rst, In, Rev;
+output [3:0] Out;
+reg [3:0] Out;
+
+// State machine states
+/*
+parameter S0 = 2'b00;
+parameter S1 = 2'b01;
+parameter S2 = 2'b10;
+parameter S3 = 2'b11;
+*/
+parameter[2:0]
+         S0 = 3'b000,
+         S1 = 3'b001,
+         S2 = 3'b010,
+         S3 = 3'b011,
+         S4 = 3'b100,
+         S5 = 3'b101,
+         S6 = 3'b110,
+         S7 = 3'b111;
+
+reg [2:0] Org_State;
+reg [2:0] New_State;
+
+reg [3:0]target_delay;
+reg [3:0]stay_delay;
+
+always @(*)
+begin
+    if (rst == 1'b1)
+    begin
+        target_delay = 0;
+    end
+    else
+    begin
+        case (Org_State)
+            S0:
+                target_delay = 4'b0001;
+            S1:
+                target_delay = 4'b0010;
+            S2:
+                target_delay = 4'b0100;
+            S3:
+                target_delay = 4'b0111;
+            S4:
+                target_delay = 4'b1101;
+            S5:
+                target_delay = 4'b0001;
+            S6:
+                target_delay = 4'b0001;
+            S7:
+                target_delay = 4'b1001;
+            default:
+                target_delay = 4'b0001;
+        endcase
+    end
+end
+always @(posedge clk or posedge rst)
+begin
+    if (rst == 1'b1)
+    begin
+        Org_State <= S0;
+        stay_delay <= 1;
+    end else if (In == 0)
+    begin
+        stay_delay <= stay_delay;
+        Org_State <= Org_State;
+    end
+    else if (stay_delay == target_delay)
+    begin
+        stay_delay <= 1;
+        Org_State <= New_State;
+    end
+    else
+    begin
+        stay_delay <= stay_delay + 1;
+    end
+end
+
+//==== New_State ===
+always @(*)
+begin
+    case ( {Org_State, In} )
+        {S0, 1'b0}:
+            New_State = S0;
+        {S0, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S7;
+            end
+            else
+            begin
+                New_State = S1;
+            end
+        end
+        {S1, 1'b0}:
+        begin
+            New_State = S1;
+        end
+        {S1, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S0;
+            end
+            else
+            begin
+                New_State = S2;
+            end
+        end
+        {S2, 1'b0}:
+            New_State = S2;
+        {S2, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S1;
+            end
+            else
+            begin
+                New_State = S3;
+            end
+        end
+        {S3, 1'b0}:
+            New_State = S3;
+        {S3, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S2;
+            end
+            else
+            begin
+                New_State = S4;
+            end
+        end
+        {S4, 1'b0}:
+            New_State = S4;
+        {S4, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S3;
+            end
+            else
+            begin
+                New_State = S5;
+            end
+        end
+        {S5, 1'b0}:
+        begin
+            New_State = S5;
+        end
+        {S5, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S4;
+            end
+            else
+            begin
+                New_State = S6;
+            end
+        end
+        {S6, 1'b0}:
+            New_State = S6;
+        {S6, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S5;
+            end
+            else
+            begin
+                New_State = S7;
+            end
+        end
+        {S7, 1'b0}:
+            New_State = S7;
+        {S7, 1'b1}:
+        begin
+            if(Rev == 1'b1)
+            begin
+                New_State = S6;
+            end
+            else
+            begin
+                New_State = S0;
+            end
+        end
+        default:
+            New_State = 3'bxxx;
+    endcase
+end
+
+//==== Out ===
+always @(*)
+begin
+    if(rst == 1'b1)
+    begin
+        Out = 4'b0000;
+    end
+    else
+    case ( {Org_State} )
+        S0:
+            Out = 4'b0000; // 0
+        S1:
+            Out = 4'b0001; // 1
+        S2:
+            Out = 4'b0011; // 3
+        S3:
+            Out = 4'b0110; // 6
+        S4:
+            Out = 4'b1100; // C
+        S5:
+            Out = 4'b0000; // 0
+        S6:
+            Out = 4'b0000; // 0
+        S7:
+            Out = 4'b1000; // 8
+        default:
+            Out = 4'b0000;
+    endcase
+end
+
+endmodule
+

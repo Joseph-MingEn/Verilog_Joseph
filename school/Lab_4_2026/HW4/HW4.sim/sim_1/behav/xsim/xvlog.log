@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/FSM_HW4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_HW4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/TB_HW4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_FSM_HW4

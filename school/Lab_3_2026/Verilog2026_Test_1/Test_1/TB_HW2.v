@@ -1,4 +1,4 @@
-`timescale 10ps / 1ps
+`timescale 1ns / 1ps
 module TB_FSM_HW_2;
 
 reg rst, clk;
@@ -20,9 +20,9 @@ initial begin
     rst= 1'b0;
 	clk= 1'b0;
 	
-	#35  rst=1'b1;
-	#20  rst=1'b0;
-	#200 $fclose(sim_out);
+	#50  rst=1'b1;
+	#50  rst=1'b0;
+	#50 $fclose(sim_out);
 	     $stop;
 end
 
