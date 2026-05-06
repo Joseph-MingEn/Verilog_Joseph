@@ -1,0 +1,25 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_ID_Count_behav xil_defaultlib.TB_ID_Count xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/ID_Count.v" Line 1. Module ID_Count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/Ring.v" Line 1. Module Ring doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/FF.v" Line 1. Module FF doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/FF.v" Line 1. Module FF doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/FF.v" Line 1. Module FF doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/FF.v" Line 1. Module FF doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/LUD_ID.v" Line 1. Module LUD_ID doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FF
+Compiling module xil_defaultlib.Ring
+Compiling module xil_defaultlib.LUD_ID
+Compiling module xil_defaultlib.ID_Count
+Compiling module xil_defaultlib.TB_ID_Count
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_ID_Count_behav

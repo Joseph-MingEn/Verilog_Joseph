@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/TB_FSM_Delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_FSM_Delay

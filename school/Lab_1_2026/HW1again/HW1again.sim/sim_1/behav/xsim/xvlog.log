@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/ID_Count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_Count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/LUD_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUD_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/Ring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ring
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/TB_ID_Count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_ID_Count

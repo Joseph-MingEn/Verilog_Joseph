@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_3_2026/HW3again/code/FSM_MealyModel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_MealyModel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_3_2026/HW3again/code/FSM_MoorModel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_MoorModel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_3_2026/HW3again/code/TB_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_FSM

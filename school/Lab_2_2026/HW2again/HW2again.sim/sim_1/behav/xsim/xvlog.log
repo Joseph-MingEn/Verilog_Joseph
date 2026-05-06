@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_2_2026/HW2again/code/Behavioral.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Behavioral
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_2_2026/HW2again/code/Dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_2_2026/HW2again/code/TB_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_ID
