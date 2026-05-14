@@ -1,10 +1,10 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
-"../../../../code/FF.v" \
-"../../../../code/ID_Count.v" \
-"../../../../code/LUD_ID.v" \
-"../../../../code/Ring.v" \
-"../../../../code/TB_ID_Count.v" \
+"../../../../../project_1/code/FF.v" \
+"../../../../../project_1/code/ID_Count.v" \
+"../../../../../project_1/code/LUD_ID.v" \
+"../../../../../project_1/code/Ring.v" \
+"../../../../../project_1/code/TB_ID_Count.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

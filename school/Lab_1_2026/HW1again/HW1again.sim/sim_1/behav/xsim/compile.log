@@ -8,3 +8,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Veri
 INFO: [VRFC 10-311] analyzing module Ring
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/project_1/code/TB_ID_Count.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TB_ID_Count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_1_2026/HW1again/HW1again.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

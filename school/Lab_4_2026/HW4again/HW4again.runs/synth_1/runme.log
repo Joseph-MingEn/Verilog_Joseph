@@ -1,0 +1,236 @@
+
+*** Running vivado
+    with args -log TB_FSM_Delay.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TB_FSM_Delay.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri May 15 01:00:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TB_FSM_Delay.tcl -notrace
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 526.797 ; gain = 219.734
+Command: synth_design -top TB_FSM_Delay -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 43484
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1066.562 ; gain = 534.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TB_FSM_Delay' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/TB_FSM_Delay.v:3]
+WARNING: [Synth 8-11581] system task call 'finish' not supported [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/TB_FSM_Delay.v:19]
+INFO: [Synth 8-6157] synthesizing module 'FSM_Delay' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Delay' (0#1) [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:1]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/TB_FSM_Delay.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'TB_FSM_Delay' (0#1) [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/TB_FSM_Delay.v:3]
+WARNING: [Synth 8-7137] Register Out_reg in module FSM_Delay has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:28]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1185.344 ; gain = 653.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1185.344 ; gain = 653.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1185.344 ; gain = 653.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Org_State_reg' in module 'FSM_Delay'
+WARNING: [Synth 8-327] inferring latch for variable 'stay_delay_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_New_State_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_New_State_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:35]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                         00000001 |                              000
+                      S1 |                         00000010 |                              001
+                      S2 |                         00000100 |                              010
+                      S3 |                         00001000 |                              011
+                      S4 |                         00010000 |                              100
+                      S5 |                         00100000 |                              101
+                      S6 |                         01000000 |                              110
+                      S7 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Org_State_reg' using encoding 'one-hot' in module 'FSM_Delay'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_New_State_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'target_delay_reg' [C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/code/FSM_Delay.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1185.344 ; gain = 653.586
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/stay_delay_reg[3]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/stay_delay_reg[2]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/stay_delay_reg[1]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/stay_delay_reg[0]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/num_reg[3]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/num_reg[2]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/num_reg[1]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/num_reg[0]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[7]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[6]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[5]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[4]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[3]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[2]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[1]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_Org_State_reg[0]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[7]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[6]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[5]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[4]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[3]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[2]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[1]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/FSM_onehot_New_State_reg[0]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/target_delay_reg[3]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/target_delay_reg[2]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/target_delay_reg[1]) is unused and will be removed from module TB_FSM_Delay.
+WARNING: [Synth 8-3332] Sequential element (U_FSM_Delay/target_delay_reg[0]) is unused and will be removed from module TB_FSM_Delay.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:47 . Memory (MB): peak = 1330.652 ; gain = 798.895
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:47 . Memory (MB): peak = 1355.504 ; gain = 823.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:47 . Memory (MB): peak = 1355.504 ; gain = 823.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1590.641 ; gain = 1058.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.648 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1712.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8076b192
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:01 . Memory (MB): peak = 1712.809 ; gain = 1186.012
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/HW4again.runs/synth_1/TB_FSM_Delay.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TB_FSM_Delay_utilization_synth.rpt -pb TB_FSM_Delay_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 01:01:35 2026...

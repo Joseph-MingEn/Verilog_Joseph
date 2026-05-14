@@ -2,9 +2,9 @@
 
 module TB_FSM_Delay;
 reg clk, rst;
-wire [3:0] Out;
+wire [3:0] Out, num;
 
-FSM_Delay U_FSM_Delay(.clk(clk), .rst(rst), .Out(Out));
+FSM_Delay U_FSM_Delay(.clk(clk), .rst(rst), .Out(Out), .num(num));
 always begin
 #10
 clk=~clk;
@@ -16,7 +16,7 @@ begin
     clk=1'b0;
     
     #100 rst=1'b0;
-    #1000 $finish;
+    #1500 $finish;
 end
 
 endmodule

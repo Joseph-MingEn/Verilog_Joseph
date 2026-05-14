@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri May 15 01:01:44 2026
+# Process ID         : 44720
+# Current directory  : C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/HW4again.runs/impl_1
+# Command line       : vivado.exe -log TB_FSM_Delay.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TB_FSM_Delay.tcl -notrace
+# Log file           : C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/HW4again.runs/impl_1/TB_FSM_Delay.vdi
+# Journal file       : C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4again/HW4again.runs/impl_1\vivado.jou
+# Running On         : MSI
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33844 MB
+# Swap memory        : 20812 MB
+# Total Virtual      : 54656 MB
+# Available Virtual  : 6437 MB
+#-----------------------------------------------------------
+source TB_FSM_Delay.tcl -notrace
