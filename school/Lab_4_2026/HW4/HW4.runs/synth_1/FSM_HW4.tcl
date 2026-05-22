@@ -83,6 +83,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.srcs/utils_1/imports/synth_1/FSM_HW4.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

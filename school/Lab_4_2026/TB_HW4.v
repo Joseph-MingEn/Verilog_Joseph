@@ -17,7 +17,7 @@ end
 
 initial
 begin
-    sim_out=$fopen("C:\\Users\\user\\Documents\\GitHub\\Verilog_Joseph\\school\\Lab_4_2026\\SimOut.txt", "w");
+//    sim_out=$fopen("C:\\Users\\user\\Documents\\GitHub\\Verilog_Joseph\\school\\Lab_4_2026\\SimOut.txt", "w");
     rst= 1'b0;
     clk= 1'b0;
     In = 1'b0;
@@ -29,8 +29,8 @@ begin
     #600 Rev = 1'b1;
     #10 In = 1'b0;
     #50 In = 1'b1;
-    #750 $fclose(sim_out);
-    $stop;
+//    #750 $fclose(sim_out);
+    #500000000$stop;
 end
 /*
 always @(posedge clk) begin

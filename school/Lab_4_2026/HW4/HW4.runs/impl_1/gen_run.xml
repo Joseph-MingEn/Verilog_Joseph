@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1777014210">
-  <File Type="ROUTE-BLACKBOX-DCP" Name="FSM_HW4_routed_bb.dcp"/>
-  <File Type="OPT-UTIL" Name="FSM_HW4_utilization_opted.rpt"/>
-  <File Type="ROUTE-PWR" Name="FSM_HW4_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1779427917">
   <File Type="PA-TCL" Name="FSM_HW4.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="FSM_HW4_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="FSM_HW4_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="FSM_HW4_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="FSM_HW4_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="FSM_HW4_reports.tcl"/>
-  <File Type="ROUTE-TIMING-PB" Name="FSM_HW4_timing_summary_routed.pb"/>
-  <File Type="OPT-UTIL-PB" Name="FSM_HW4_utilization_opted.pb"/>
+  <File Type="INIT-TIMING" Name="FSM_HW4_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="FSM_HW4_opt.dcp"/>
   <File Type="OPT-DRC" Name="FSM_HW4_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="FSM_HW4_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="FSM_HW4_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FSM_HW4_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="FSM_HW4.hwdef"/>
   <File Type="OPT-TIMING" Name="FSM_HW4_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="FSM_HW4_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="FSM_HW4_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="FSM_HW4_drc_pwropted.rpt"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="FSM_HW4.nts"/>
   <File Type="PWROPT-TIMING" Name="FSM_HW4_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="FSM_HW4_placed.dcp"/>
   <File Type="PLACE-IO" Name="FSM_HW4_io_placed.rpt"/>
@@ -27,19 +22,17 @@
   <File Type="PLACE-CTRL" Name="FSM_HW4_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="FSM_HW4_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="FSM_HW4_incremental_reuse_pre_placed.rpt"/>
-  <File Type="NOC_SOLUTION_FILE" Name="FSM_HW4.ncr"/>
   <File Type="PLACE-TIMING" Name="FSM_HW4_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="FSM_HW4_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="FSM_HW4_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="FSM_HW4_postplace_pwropt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="FSM_HW4_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="FSM_HW4_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="FSM_HW4_drc_physopted.rpt"/>
   <File Type="PHYSOPT-TIMING" Name="FSM_HW4_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="FSM_HW4_utilization_routed.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="FSM_HW4_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="FSM_HW4_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="FSM_HW4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FSM_HW4_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="FSM_HW4_utilization_routed.rpt"/>
   <File Type="ROUTE-UTIL-PB" Name="FSM_HW4_utilization_routed.pb"/>
   <File Type="ROUTE-DRC" Name="FSM_HW4_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="FSM_HW4_drc_routed.pb"/>
@@ -47,15 +40,20 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="FSM_HW4_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FSM_HW4_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FSM_HW4_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="FSM_HW4_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="FSM_HW4_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="FSM_HW4_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FSM_HW4_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="FSM_HW4_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="FSM_HW4_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FSM_HW4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FSM_HW4_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="FSM_HW4_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="FSM_HW4_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="FSM_HW4_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="FSM_HW4_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="FSM_HW4_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="FSM_HW4_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="FSM_HW4_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="FSM_HW4_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FSM_HW4_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FSM_HW4_timing_summary_postroute_physopted.rpt"/>
@@ -64,6 +62,8 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FSM_HW4_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FSM_HW4_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FSM_HW4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="FSM_HW4.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="FSM_HW4.ncr"/>
   <File Type="BG-BIT" Name="FSM_HW4.bit"/>
   <File Type="BG-BIN" Name="FSM_HW4.bin"/>
   <File Type="BITSTR-MSK" Name="FSM_HW4.msk"/>
@@ -137,20 +137,32 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/HW4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/FSM_HW4.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

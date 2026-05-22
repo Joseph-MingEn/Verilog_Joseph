@@ -1,2 +1,3 @@
 Time resolution is 1 ps
+WARNING: File/Multi-channel descriptor (-1) passed to $fclose is not valid. Please compile the design with -debug for source location information.
 $stop called at time : 15050 ps : File "C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/TB_HW4.v" Line 33

@@ -1,100 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1778778007">
-  <File Type="ROUTE-PWR" Name="TB_FSM_Delay_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="TB_FSM_Delay.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="TB_FSM_Delay_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="TB_FSM_Delay_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="TB_FSM_Delay_reports.tcl"/>
-  <File Type="INIT-TIMING" Name="TB_FSM_Delay_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="TB_FSM_Delay_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="TB_FSM_Delay_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="TB_FSM_Delay.mmi"/>
   <File Type="OPT-DRC" Name="TB_FSM_Delay_drc_opted.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="TB_FSM_Delay_routed_bb.dcp"/>
-  <File Type="OPT-UTIL" Name="TB_FSM_Delay_utilization_opted.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="TB_FSM_Delay_timing_summary_routed.pb"/>
-  <File Type="OPT-UTIL-PB" Name="TB_FSM_Delay_utilization_opted.pb"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="TB_FSM_Delay_methodology_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="TB_FSM_Delay.hwdef"/>
-  <File Type="OPT-TIMING" Name="TB_FSM_Delay_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="TB_FSM_Delay_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="TB_FSM_Delay_drc_pwropted.rpt"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="TB_FSM_Delay.nts"/>
-  <File Type="PWROPT-TIMING" Name="TB_FSM_Delay_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="TB_FSM_Delay_placed.dcp"/>
-  <File Type="PLACE-IO" Name="TB_FSM_Delay_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="TB_FSM_Delay_clock_utilization_placed.rpt"/>
+  <File Type="BG-DRC" Name="TB_FSM_Delay.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="TB_FSM_Delay_route_status.pb"/>
+  <File Type="BG-BGN" Name="TB_FSM_Delay.bgn"/>
   <File Type="PLACE-UTIL" Name="TB_FSM_Delay_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="TB_FSM_Delay_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="TB_FSM_Delay_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="TB_FSM_Delay_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="TB_FSM_Delay_incremental_reuse_pre_placed.rpt"/>
-  <File Type="NOC_SOLUTION_FILE" Name="TB_FSM_Delay.ncr"/>
-  <File Type="PLACE-TIMING" Name="TB_FSM_Delay_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="TB_FSM_Delay_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="TB_FSM_Delay_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="TB_FSM_Delay_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="TB_FSM_Delay_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="TB_FSM_Delay_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="TB_FSM_Delay_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="TB_FSM_Delay_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="TB_FSM_Delay_utilization_routed.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="TB_FSM_Delay_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="TB_FSM_Delay_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="TB_FSM_Delay_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-UTIL-PB" Name="TB_FSM_Delay_utilization_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="TB_FSM_Delay_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="TB_FSM_Delay_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="TB_FSM_Delay_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="TB_FSM_Delay_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TB_FSM_Delay_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TB_FSM_Delay_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="TB_FSM_Delay_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="TB_FSM_Delay_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="TB_FSM_Delay_route_status.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="TB_FSM_Delay_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="TB_FSM_Delay_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="TB_FSM_Delay_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="TB_FSM_Delay_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="TB_FSM_Delay_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="TB_FSM_Delay_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TB_FSM_Delay_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TB_FSM_Delay_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TB_FSM_Delay_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TB_FSM_Delay_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TB_FSM_Delay_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TB_FSM_Delay_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TB_FSM_Delay_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TB_FSM_Delay_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="TB_FSM_Delay.bit"/>
+  <File Type="PLACE-IO" Name="TB_FSM_Delay_io_placed.rpt"/>
   <File Type="BG-BIN" Name="TB_FSM_Delay.bin"/>
+  <File Type="PLACE-CTRL" Name="TB_FSM_Delay_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="TB_FSM_Delay_power_routed.rpx"/>
   <File Type="BITSTR-MSK" Name="TB_FSM_Delay.msk"/>
   <File Type="BITSTR-RBT" Name="TB_FSM_Delay.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TB_FSM_Delay_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TB_FSM_Delay_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TB_FSM_Delay_route_status.rpt"/>
+  <File Type="PA-TCL" Name="TB_FSM_Delay.tcl"/>
+  <File Type="ROUTE-PWR" Name="TB_FSM_Delay_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="TB_FSM_Delay_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="TB_FSM_Delay_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="TB_FSM_Delay_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="TB_FSM_Delay.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TB_FSM_Delay_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TB_FSM_Delay_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TB_FSM_Delay.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TB_FSM_Delay_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="TB_FSM_Delay_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TB_FSM_Delay.vdi"/>
+  <File Type="ROUTE-CLK" Name="TB_FSM_Delay_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TB_FSM_Delay_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TB_FSM_Delay_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TB_FSM_Delay_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TB_FSM_Delay_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TB_FSM_Delay_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TB_FSM_Delay_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TB_FSM_Delay_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TB_FSM_Delay_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="TB_FSM_Delay.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TB_FSM_Delay_bus_skew_postroute_physopted.pb"/>
   <File Type="BITSTR-NKY" Name="TB_FSM_Delay.nky"/>
   <File Type="BITSTR-BMM" Name="TB_FSM_Delay_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="TB_FSM_Delay.mmi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="TB_FSM_Delay.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TB_FSM_Delay_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="TB_FSM_Delay_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TB_FSM_Delay_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TB_FSM_Delay_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="TB_FSM_Delay_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="TB_FSM_Delay_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="TB_FSM_Delay_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="TB_FSM_Delay_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TB_FSM_Delay_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TB_FSM_Delay_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TB_FSM_Delay_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TB_FSM_Delay_postroute_physopt_bb.dcp"/>
   <File Type="PDI-FILE" Name="TB_FSM_Delay.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="TB_FSM_Delay_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="TB_FSM_Delay_pld.pdi"/>
   <File Type="RCFI_FILE" Name="TB_FSM_Delay.rcfi"/>
   <File Type="CFI_FILE" Name="TB_FSM_Delay.cfi"/>
   <File Type="RNPI_FILE" Name="TB_FSM_Delay.rnpi"/>
-  <File Type="RCDO-FILE" Name="TB_FSM_Delay.rcdo"/>
-  <File Type="MARKER-RNPI-FILE" Name="TB_FSM_Delay_markers.rnpi"/>
-  <File Type="MARKER-RCDO-FILE" Name="TB_FSM_Delay_markers.rcdo"/>
-  <File Type="BOOT_RNPI_FILE" Name="TB_FSM_Delay_boot.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="TB_FSM_Delay_boot_markers.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="TB_FSM_Delay_pld.rnpi"/>
-  <File Type="PL_MARKER_RNPI_FILE" Name="TB_FSM_Delay_pld_markers.rnpi"/>
-  <File Type="PL_MASK_RNPI_FILE" Name="TB_FSM_Delay_pld_mask.rnpi"/>
-  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="TB_FSM_Delay_pld_shutdown.rnpi"/>
-  <File Type="PL_UNMASK_RNPI_FILE" Name="TB_FSM_Delay_pld_unmask.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="TB_FSM_Delay_pld.rcdo"/>
-  <File Type="PL-CLEAR-RCDO-FILE" Name="TB_FSM_Delay_pld_clear.rcdo"/>
-  <File Type="PL_MARKER_RCDO_FILE" Name="TB_FSM_Delay_pld_markers.rcdo"/>
-  <File Type="PL_MASK_RCDO_FILE" Name="TB_FSM_Delay_pld_mask.rcdo"/>
-  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="TB_FSM_Delay_pld_unmask_markers.rcdo"/>
-  <File Type="PL_UNMASK_RCDO_FILE" Name="TB_FSM_Delay_pld_unmask.rcdo"/>
   <File Type="NPI_FILE" Name="TB_FSM_Delay.npi"/>
   <File Type="RBD_FILE" Name="TB_FSM_Delay.rbd"/>
+  <File Type="ROUTE-RQS" Name="TB_FSM_Delay_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TB_FSM_Delay_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="MMI-FILE" Name="TB_FSM_Delay.mmi"/>
   <File Type="BIF-FILE" Name="TB_FSM_Delay.bif"/>
   <File Type="BOOT-BIF-FILE" Name="TB_FSM_Delay_boot.bif"/>
@@ -102,17 +77,24 @@
   <File Type="LTX-FILE" Name="TB_FSM_Delay.ltx"/>
   <File Type="BOOT-LTX-FILE" Name="TB_FSM_Delay_boot.ltx"/>
   <File Type="PL-LTX-FILE" Name="TB_FSM_Delay_pld.ltx"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="TB_FSM_Delay.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="TB_FSM_Delay.sysdef"/>
-  <File Type="BG-BGN" Name="TB_FSM_Delay.bgn"/>
-  <File Type="BG-DRC" Name="TB_FSM_Delay.drc"/>
-  <File Type="RDI-RDI" Name="TB_FSM_Delay.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="TB_FSM_Delay_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TB_FSM_Delay_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="RCDO-FILE" Name="TB_FSM_Delay.rcdo"/>
+  <File Type="MARKER-RCDO-FILE" Name="TB_FSM_Delay_markers.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="TB_FSM_Delay_pld.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="TB_FSM_Delay_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="TB_FSM_Delay_boot.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="TB_FSM_Delay_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="TB_FSM_Delay_boot_markers.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="TB_FSM_Delay_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="TB_FSM_Delay_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="TB_FSM_Delay_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="TB_FSM_Delay_pld_unmask.rnpi"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="TB_FSM_Delay_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="TB_FSM_Delay_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="TB_FSM_Delay_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="TB_FSM_Delay_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="TB_FSM_Delay_pld_unmask.rcdo"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="TB_FSM_Delay.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="TB_FSM_Delay.ncr"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/code/FSM_Delay.v">
@@ -158,5 +140,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

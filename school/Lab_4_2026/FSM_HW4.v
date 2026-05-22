@@ -27,6 +27,20 @@ reg [2:0] New_State;
 reg [3:0]target_delay;
 reg [3:0]stay_delay;
 
+reg [21:0] clk_div;
+
+always @(posedge clk or posedge rst)
+begin
+    if (rst)
+        clk_div <= 0;
+    else
+        clk_div <= clk_div + 1;
+end
+
+wire slow_tick;
+
+assign slow_tick = (clk_div == 22'd0);
+
 always @(*)
 begin
     if (rst == 1'b1)
@@ -57,25 +71,30 @@ begin
         endcase
     end
 end
+
 always @(posedge clk or posedge rst)
 begin
     if (rst == 1'b1)
     begin
         Org_State <= S0;
         stay_delay <= 1;
-    end else if (In == 0)
-    begin
-        stay_delay <= stay_delay;
-        Org_State <= Org_State;
     end
-    else if (stay_delay == target_delay)
+    else if (slow_tick)
     begin
-        stay_delay <= 1;
-        Org_State <= New_State;
-    end
-    else
-    begin
-        stay_delay <= stay_delay + 1;
+        if (In == 0)
+        begin
+            stay_delay <= stay_delay;
+            Org_State <= Org_State;
+        end
+        else if (stay_delay == target_delay)
+        begin
+            stay_delay <= 1;
+            Org_State <= New_State;
+        end
+        else
+        begin
+            stay_delay <= stay_delay + 1;
+        end
     end
 end
 
@@ -188,7 +207,7 @@ begin
             end
             else
             begin
-                New_State = S0;
+                New_State = S7;
             end
         end
         default:

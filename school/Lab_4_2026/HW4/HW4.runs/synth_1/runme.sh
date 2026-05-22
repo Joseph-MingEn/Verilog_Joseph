@@ -41,4 +41,3 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FSM_HW4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_HW4.tcl

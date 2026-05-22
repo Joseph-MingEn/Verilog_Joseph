@@ -23,8 +23,12 @@ always @(posedge clk or posedge rst) begin
         num <= 4'b0000;
     end
     else begin
+        if (target_delay == stay_delay) begin
+            stay_delay <= 4'b0001;
+        end else begin
+            stay_delay <= stay_delay + 1;
+        end
         Org_State <= New_State;
-        stay_delay <= stay_delay + 1;
         Out <= stay_delay;
     end
 end
@@ -32,15 +36,15 @@ end
 always @(*) begin
     if (target_delay == stay_delay) begin
         case (Org_State)
-            S0: {New_State, target_delay, num, stay_delay} = {S1, 4'b0001 + 4'h0, 4'b0000, 4'b0000};
-            S1: {New_State, target_delay, num, stay_delay} = {S2, 4'b0001 + 4'h1, 4'b0001, 4'b0000};
-            S2: {New_State, target_delay, num, stay_delay} = {S3, 4'b0001 + 4'h3, 4'b0011, 4'b0000};
-            S3: {New_State, target_delay, num, stay_delay} = {S4, 4'b0001 + 4'h6, 4'b0110, 4'b0000};
-            S4: {New_State, target_delay, num, stay_delay} = {S5, 4'b0001 + 4'hC, 4'b1100, 4'b0000};
-            S5: {New_State, target_delay, num, stay_delay} = {S6, 4'b0001 + 4'h0, 4'b0000, 4'b0000};
-            S6: {New_State, target_delay, num, stay_delay} = {S7, 4'b0001 + 4'h0, 4'b0000, 4'b0000};
-            S7: {New_State, target_delay, num, stay_delay} = {S7, 4'b0001 + 4'h8, 4'b1000, 4'b0000};
-            default: {New_State, target_delay, num, stay_delay} = {S0, 4'b0001, 4'b0000, 4'b0000};
+            S0: {New_State, target_delay, num} = {S1, 4'b0001 + 4'h0, 4'b0000};
+            S1: {New_State, target_delay, num} = {S2, 4'b0001 + 4'h1, 4'b0001};
+            S2: {New_State, target_delay, num} = {S3, 4'b0001 + 4'h3, 4'b0011};
+            S3: {New_State, target_delay, num} = {S4, 4'b0001 + 4'h6, 4'b0110};
+            S4: {New_State, target_delay, num} = {S5, 4'b0001 + 4'hC, 4'b1100};
+            S5: {New_State, target_delay, num} = {S6, 4'b0001 + 4'h0, 4'b0000};
+            S6: {New_State, target_delay, num} = {S7, 4'b0001 + 4'h0, 4'b0000};
+            S7: {New_State, target_delay, num} = {S7, 4'b0001 + 4'h8, 4'b1000};
+            default: {New_State, target_delay, num} = {S0, 4'b0001, 4'b0000};
         endcase
     end
 end
