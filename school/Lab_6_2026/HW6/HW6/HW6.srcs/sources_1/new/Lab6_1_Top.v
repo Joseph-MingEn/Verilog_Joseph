@@ -43,7 +43,7 @@ always @(posedge clk or posedge rst) begin
         slow_clk <= 1'b0;
     end
     else begin
-        if (count == 26'd4) begin
+        if (count == 26'd24_999_999) begin
             count <= 26'd0;
             slow_clk <= ~slow_clk;
         end

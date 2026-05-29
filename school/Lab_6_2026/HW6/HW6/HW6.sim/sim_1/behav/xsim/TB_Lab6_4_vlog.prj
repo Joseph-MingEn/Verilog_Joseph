@@ -1,7 +1,9 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
-"../../../../HW6.srcs/sources_1/new/Lab6_1_Top.v" \
-"../../../../HW6.srcs/sources_1/new/TB_Lab6_1_Top.v" \
+"../../../../HW6.srcs/sources_1/new/Clock_Divider_Duty.v" \
+"../../../../HW6.srcs/sources_1/new/Lab6_4_Top.v" \
+"../../../../HW6.srcs/sources_1/new/Multi_LFSR.v" \
+"../../../../HW6.srcs/sources_1/new/TB_Lab6_4.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
