@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Fri May 22 13:32:07 2026
-# Process ID         : 34760
+# Start of session at: Fri May 22 20:06:08 2026
+# Process ID         : 15992
 # Current directory  : C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.runs/impl_1
 # Command line       : vivado.exe -log FSM_HW4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FSM_HW4.tcl -notrace
 # Log file           : C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.runs/impl_1/FSM_HW4.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 33844 MB
 # Swap memory        : 19327 MB
 # Total Virtual      : 53171 MB
-# Available Virtual  : 5723 MB
+# Available Virtual  : 24477 MB
 #-----------------------------------------------------------
 source FSM_HW4.tcl -notrace

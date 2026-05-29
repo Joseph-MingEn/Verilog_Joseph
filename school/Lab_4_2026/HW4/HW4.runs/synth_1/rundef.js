@@ -23,6 +23,8 @@ var ISEJScriptLib = RDScrDir + "/ISEWrap.js";
 eval( EAInclude(ISEJScriptLib) );
 
 
+ISEStep( "vivado",
+         "-log FSM_HW4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_HW4.tcl" );
 
 
 

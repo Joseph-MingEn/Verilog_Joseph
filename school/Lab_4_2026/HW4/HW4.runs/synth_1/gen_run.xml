@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1779427427" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/FSM_HW4.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1779451445" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/FSM_HW4.dcp">
   <File Type="PA-TCL" Name="FSM_HW4.tcl"/>
   <File Type="REPORTS-TCL" Name="FSM_HW4_reports.tcl"/>
   <File Type="RDS-RDS" Name="FSM_HW4.vds"/>
@@ -33,6 +33,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/HW4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

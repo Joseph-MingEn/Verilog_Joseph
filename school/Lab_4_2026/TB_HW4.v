@@ -1,13 +1,12 @@
-
 `timescale 10ps / 1ps
 module TB_FSM_HW4;
 
-reg rst, clk, In, Rev;
+reg rst, clk, In;
 wire [3:0] Out;
 
 integer sim_out;
 
-FSM_HW4 U_fsm(.clk(clk), .rst(rst), .In(In), .Out(Out), .Rev(Rev));
+FSM_HW4 U_fsm(.clk(clk), .rst(rst), .In(In), .Out(Out));
 
 always
 begin
@@ -21,12 +20,10 @@ begin
     rst= 1'b0;
     clk= 1'b0;
     In = 1'b0;
-    Rev = 1'b0;
 
     #35  rst=1'b1;
     #10  rst=1'b0;
     #50 In = 1'b1; 
-    #600 Rev = 1'b1;
     #10 In = 1'b0;
     #50 In = 1'b1;
 //    #750 $fclose(sim_out);

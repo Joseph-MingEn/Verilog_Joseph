@@ -58,6 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
 set_param chipscope.maxJobs 5
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -82,6 +83,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.srcs/constrs_1/new/HW4.xdc
+set_property used_in_implementation false [get_files C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.srcs/constrs_1/new/HW4.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental C:/Users/user/Documents/GitHub/Verilog_Joseph/school/Lab_4_2026/HW4/HW4.srcs/utils_1/imports/synth_1/FSM_HW4.dcp

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-module FSM_HW4(clk, rst, In, Out, Rev);
-input clk, rst, In, Rev;
+module FSM_HW4(clk, rst, In, Out);
+input clk, rst, In;
 output [3:0] Out;
 reg [3:0] Out;
 
@@ -27,7 +27,7 @@ reg [2:0] New_State;
 reg [3:0]target_delay;
 reg [3:0]stay_delay;
 
-reg [21:0] clk_div;
+reg [0:0] clk_div;
 
 always @(posedge clk or posedge rst)
 begin
@@ -39,7 +39,7 @@ end
 
 wire slow_tick;
 
-assign slow_tick = (clk_div == 22'd0);
+assign slow_tick = (clk_div == 1'd0);
 
 always @(*)
 begin
@@ -105,111 +105,39 @@ begin
         {S0, 1'b0}:
             New_State = S0;
         {S0, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S7;
-            end
-            else
-            begin
-                New_State = S1;
-            end
-        end
+            New_State = S1;
         {S1, 1'b0}:
         begin
             New_State = S1;
         end
         {S1, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S0;
-            end
-            else
-            begin
-                New_State = S2;
-            end
-        end
+            New_State = S2;
         {S2, 1'b0}:
             New_State = S2;
         {S2, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S1;
-            end
-            else
-            begin
-                New_State = S3;
-            end
-        end
+            New_State = S3;
         {S3, 1'b0}:
             New_State = S3;
         {S3, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S2;
-            end
-            else
-            begin
-                New_State = S4;
-            end
-        end
+            New_State = S4;
         {S4, 1'b0}:
             New_State = S4;
         {S4, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S3;
-            end
-            else
-            begin
-                New_State = S5;
-            end
-        end
+            New_State = S5;
         {S5, 1'b0}:
         begin
             New_State = S5;
         end
         {S5, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S4;
-            end
-            else
-            begin
-                New_State = S6;
-            end
-        end
+            New_State = S6;
         {S6, 1'b0}:
             New_State = S6;
         {S6, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S5;
-            end
-            else
-            begin
-                New_State = S7;
-            end
-        end
+            New_State = S7;
         {S7, 1'b0}:
             New_State = S7;
         {S7, 1'b1}:
-        begin
-            if(Rev == 1'b1)
-            begin
-                New_State = S6;
-            end
-            else
-            begin
-                New_State = S7;
-            end
-        end
+            New_State = S7;
         default:
             New_State = 3'bxxx;
     endcase
