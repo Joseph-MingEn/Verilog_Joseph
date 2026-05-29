@@ -2,3 +2,6 @@ Running: xsim.dir/TB_STUDENT_ROM_behav/xsimk.exe -simmode gui -wdb TB_STUDENT_RO
 Design successfully loaded
 Design Loading Memory Usage: 11220 KB (Peak: 11220 KB)
 Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 12352 KB (Peak: 12352 KB)
+Simulation CPU Usage: 156 ms
